@@ -19,7 +19,7 @@ valid_passwords_part_1 = list(filter(lambda  x: int(x.min) <= x.password.count(x
 
 print(len(valid_passwords_part_1))
 
-# Valid passwords for part 2 must have the char appear exatcly once in the positions defined in min or max
+# Valid passwords for part 2 must have the char appear exactly once in the positions defined in min or max
 # Similar to XOR. Subtract 1 from index as Toboggan Corporate Policies have no concept of "index zero"!
 valid_passwords_part_2 = list(filter(lambda  x: 
     (x.password[int(x.min) - 1] == x.char) ^
